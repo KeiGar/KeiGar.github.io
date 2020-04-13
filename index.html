@@ -6,20 +6,46 @@
 <body>
   <nav></nav>
   <main>
-    <h1>Index Page</h1>
+    <h1>Index Page</h1>   
+    <b>This page displays all data of the user that will be fetched solely by browsing this site.</b> 
     <div>
-      <span id="user"></span>>
+      <h2>User Data:</h2>
+      <div>
+        Platform: 
+        <span id="platform"></span><br>
+        Browser: 
+        <span id="browser"></span><br>
+        Languages:
+        <span id="languages"></span><br>
+      </div>
     </div>
     <div>
       <h2>Links:</h2>
       <a href="https://www.google.com">Google</a> <br>
       <a href="https://www.youtube.com">Youtube</a><br>
-      <a href="file:///C:/">Nice Virus site</a>
+      <a href="http://loli.dance/">50/50 Klick!</a>
     </div>
   </main>
   <script>
-    const display = document.getElementById("user");
-    display.innerHTML += navigator.platform;
-  
+navigator.sayswho= (function(){
+    var ua= navigator.userAgent, tem, 
+    M= ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+    if(/trident/i.test(M[1])){
+        tem=  /\brv[ :]+(\d+)/g.exec(ua) || [];
+        return 'IE '+(tem[1] || '');
+    }
+    if(M[1]=== 'Chrome'){
+        tem= ua.match(/\b(OPR|Edge)\/(\d+)/);
+        if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+    }
+    M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?'];
+    if((tem= ua.match(/version\/(\d+)/i))!= null) M.splice(1, 1, tem[1]);
+    return M.join(' ');
+})();
+
+    document.getElementById("platform").innerHTML = navigator.platform;
+    document.getElementById("browser").innerHTML = navigator.sayswho;
+    document.getElementById("languages").innerHTML = navigator.languages;
+    
   </script>
 </body>
