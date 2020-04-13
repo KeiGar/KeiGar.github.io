@@ -1,9 +1,19 @@
 <!doctype html>
 <head>
 <title>Index</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+  <nav></nav>
   <main>
     <h1>Welcome to the index page, normally you shouldn't see this.</h1>
+    <div>
+      <span id="user"></span>
+    </div>
   </main>
+  <script>
+    const display = document.getElementById("user");
+    display.innerHTML += navigator.platform;
+  
+  </script>
 </body>
