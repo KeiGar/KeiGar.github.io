@@ -1,3 +1,7 @@
+:root {
+    --main-col-gradient: linear-gradient(to right, #f12711, #f5af19);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,7 +17,7 @@ body{
  z-index: 10;
 }
 .navbar{
-    background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: var(--main-col-gradient); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 }
 .navbar-nav li {
@@ -35,7 +39,7 @@ body{
 /*--BANNER--*/
 
 #banner {
-    background-image: linear-gradient(to right, #c31432, #240b36);
+    background-image: var(--main-col-gradient);
     color: #fff;
     padding-top: 5%;
     
@@ -44,4 +48,8 @@ body{
     font-size: 40px;
     font-weight: 600;
     margin-top: 100px;
+}
+
+.bottom-img {
+    width: 100%;
 }
