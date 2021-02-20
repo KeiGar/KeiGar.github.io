@@ -5,6 +5,8 @@
 body{
     font-family: sans-serif;
 }
+
+/*--NAV--*/
 #nav-bar{
  position: sticky;
  top: 0;
@@ -12,12 +14,34 @@ body{
 }
 .navbar{
     background: linear-gradient(to right, #c31432, #240b36); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 0;
+    
 }
 .navbar-nav li {
     padding: 0 10px;
 }
 .navbar-nav li a {
-    color: #fff;
+    color: #fff !important;
     font-weight: 600;
+    float: right;
+    text-align: left;
+}
+.fa-bars {
+    color: #fff;
+}
+.navbar-toggler {
+    outline: none !important;
+}
+
+/*--BANNER--*/
+
+#banner {
+    background-image: linear-gradient(to right, #c31432, #240b36);
+    color: #fff;
+    padding-top: 5%;
+    
+}
+.site-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
 }
