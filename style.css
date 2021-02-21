@@ -50,6 +50,37 @@ body{
     margin-top: 100px;
 }
 
-.bottom-img {
+#banner-up {
+    width: 100%;
+}
+
+/*--ABOUT ME--*/
+
+
+/*--CONTACT--*/
+#contact {
+    background-image: var(--main-col-gradient);
+    color: #fff;
+    padding-bottom: 5%;
+}
+
+#contact p {
+ font-weight: 500;
+ font-size: 1.2em;
+}
+
+#contact p a {
+    font-weight: 500;
+    font-size: 1.2em;
+   }
+#contact a:link {
+    color: #fff;
+}
+#contact a:visited {
+    color: #fff;
+
+}
+
+#banner-down {
     width: 100%;
 }
