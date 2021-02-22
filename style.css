@@ -56,6 +56,10 @@ h2 {
 #banner-up {
     width: 100%;
 }
+.banner-art {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /*--ABOUT ME--*/
@@ -67,11 +71,9 @@ h2 {
 #about-me  i {
     background: -webkit-linear-gradient(#f12711, #f5af19);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-#banner-art {
-    width: 100%;
 }
 
 
