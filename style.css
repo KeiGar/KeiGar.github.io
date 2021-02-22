@@ -38,6 +38,15 @@ h2 {
 .navbar-toggler {
     outline: none !important;
 }
+.logo {
+    max-width: 100%;
+    height: auto;
+    
+}
+.navbar-brand {
+    max-width: 3%;
+    height: auto;
+}
 
 /*--BANNER--*/
 
