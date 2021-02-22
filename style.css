@@ -57,10 +57,21 @@ h2 {
     width: 100%;
 }
 
+
 /*--ABOUT ME--*/
 #about-me {
     font-weight: 500;
     font-size: 1.2em;
+}
+
+#about-me  i {
+    background: -webkit-linear-gradient(#f12711, #f5af19);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#banner-art {
+    width: 100%;
 }
 
 
