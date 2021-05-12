@@ -2,18 +2,6 @@
     --main-col-gradient: linear-gradient(to right, #f12711, #f5af19);
 }
 
-@media (max-width: 800px) {
-   .navbar {
-       font-size: 2.2rem;
-   }
-}
-@media (min-width: 800px) {
-    .navbar {
-        font-size: 1.5rem;
-    }
- }
-
-
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +21,7 @@ h2 {
 }
 .navbar{
     background: var(--main-col-gradient); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    font-size: 1.3rem;
     
 }
 .navbar-nav li {
