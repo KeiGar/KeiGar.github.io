@@ -113,3 +113,13 @@ h2 {
 #banner-down {
     width: 100%;
 }
+
+
+/*--PROJECTS--*/
+#projects {
+    margin-top: 1.5rem;
+}
+
+#projects .row {
+    margin-top: 1.5rem;
+}
