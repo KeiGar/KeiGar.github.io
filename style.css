@@ -121,5 +121,15 @@ h2 {
 }
 
 #projects .row {
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
+
+#projects img {
+    width: 90%;
+    height: 90%;
+}
+
+#projects p, #projects li {
+    font-size: 1.2rem;
+}
+
