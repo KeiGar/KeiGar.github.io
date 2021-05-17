@@ -133,3 +133,11 @@ h2 {
     font-size: 1.2rem;
 }
 
+#projects a:link {
+    color: #fff;
+}
+#projects a:visited {
+    color: #fff;
+
+}
+
