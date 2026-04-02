@@ -6,6 +6,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -15,6 +16,7 @@ h2 {
 
 img {
     width: 100%;
+    height: auto;
 }
 
 .press-start-2p-regular {
@@ -143,5 +145,51 @@ img {
 #projects a:visited {
     color: #fff;
 
+}
+
+#projects a:hover, 
+#projects a:focus {
+    color: #cccccc;
+    text-decoration: none;
+}
+
+/* Card Base Styling */
+.game-card {
+    background-color: rgba(255, 255, 255, 0.05); 
+    border: 2px solid #5a3d5e; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    margin-left: 3em;
+}
+
+.game-card .card-img-top {
+    border-bottom: 2px solid #5a3d5e;
+    object-fit: cover;
+}
+
+.game-card:hover, 
+.game-card:focus-within {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    border-color: #8c638f; 
+}
+
+.btn-retro {
+    border-width: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #372a39; /* Re-use your dark background variable here */
+
+}
+
+.btn-retro:hover {
+    color: #372a39; /* Re-use your dark background variable here */
+    border-color: #8c638f;
+}
+
+/* Badge styling adjustments */
+.game-card .badge {
+    font-family: system-ui, sans-serif; /* Keeps badges readable if your main font is retro */
+    font-size: 0.75rem;
 }
 
